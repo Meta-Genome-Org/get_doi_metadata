@@ -1,0 +1,6 @@
+.json
+/bin
+/lib
+/lib64
+/include
+.cfg
