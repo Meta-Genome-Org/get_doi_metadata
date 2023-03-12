@@ -41,7 +41,10 @@ pip3 install crossref-commons
 Execute module as a script:
     python3 cross_ref.py prefix/suffix
 
-    e.g.
+    Example 1:
+    python3 cross_ref.py 10.1021/acsanm.1c03151
+    
+    Example 2:
     python3 cross_ref.py 10.25250/thescbr.brk569
 """
 
