@@ -39,6 +39,7 @@ pip3 install crossref-commons
     }
 
 Execute module as a script:
+
     python3 cross_ref.py prefix/suffix
 
     Example 1:
