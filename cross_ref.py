@@ -1,10 +1,55 @@
+"""
+
+Retrieve bibliographic information from DOI
+
+Usage:
+    >>> import cross_ref
+    >>> cross_ref.get_pub(doi)
+
+    Returns a Python dictionary with structure:
+    {
+        'author': 
+            [{'ORCID': 
+                'http://orcid.org/0000-0001-5966-6083', 
+                'authenticated-orcid': True, 
+                'given': 'Harrison J.', 
+                'family': 'Cox', 
+                'sequence': 'first', 
+                'affiliation': [{'name': 'Department of Chemistry, Durham University, Durham DH1 3LE, England, U.K.'}]}, 
+            {'given': 'Gary J.', 
+                'family': 'Sharples', 
+                'sequence': 
+                'additional', 
+                'affiliation': [{'name': 'Department of Biosciences, Durham University, Durham DH1 3LE, England, U.K.'}]}, 
+            {'ORCID': 
+                'http://orcid.org/0000-0002-5086-5737', 
+                'authenticated-orcid': True, 
+                'given': 'Jas Pal S.', 
+                'family': 'Badyal', 
+                'sequence': 'additional', 
+                'affiliation': [{'name': 'Department of Chemistry, Durham University, Durham DH1 3LE, England, U.K.'}]}], 
+        'title': ['Tea–Essential Oil–Metal Hybrid Nanocoatings for Bacterial and Viral Inactivation'], 
+        'journal': ['ACS Applied Nano Materials'], 
+        'issue': '11', 
+        'volume': '4', 
+        'pages': '12619-12628', 
+        'pub_year': 2021
+    }
+
+Execute module as a script:
+    python3 cross_ref.py prefix/suffix
+
+    e.g.
+    python3 cross_ref.py 10.25250/thescbr.brk569
+"""
+
 import crossref_commons.retrieval
 import json
 import sys
 
 #test dois
-#  10.25250/thescbr.brk569
-
+#  Stefan:  10.25250/thescbr.brk569
+#  Jas:     10.1021/acsanm.1c03151
 
 def get_pub(doi):
     """Get bibliographic details for doi.
@@ -30,20 +75,29 @@ def get_pub(doi):
 def read(d):
 
     """bibrecord = 
-    author=['J. Timmer', 'M. König'],
+    author=[],
     title="On generating power law noise",
     journal="Astronomy and Astrophysics",
     volume="300",
-    pages="707--710",
-    year="1995"
+    issue="11",
+    pages="707-710",
+    pub_year="1995"
     """
-    bibrec = dict(author = [], title = "", journal = "", volume = "", pages = "", year = "")
+    
+    bibrec = dict(author = [], title = "", journal = "", issue = "", volume = "", pages = "", pub_year = "")
     bibrec['author']   = d['author']
     bibrec['title']    = d['title']
     bibrec['journal']  = d['container-title']
-    bibrec['volume']   = "vol"
-    bibrec['pages']    = "pages"
-    bibrec['year']     = d['published']
+    bibrec['volume']   = d['volume']
+    try:
+        bibrec['issue']    = d['journal-issue']['issue']
+    except KeyError:
+        print("Did not find issue")
+    try:
+        bibrec['pages']    = d['page']
+    except KeyError:
+        print("Did not find pages")
+    bibrec['pub_year']     = d['published']['date-parts'][0][0]
 
     return bibrec
 
