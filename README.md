@@ -4,7 +4,7 @@
 pip3 install crossref-commons
 
 
-## Usage:
+## Usage: 
     >>> import cross_ref
     >>> cross_ref.get_pub(doi)
 
