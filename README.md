@@ -12,34 +12,34 @@ pip3 install crossref-commons
     
     {
     'author': [
-    {'ORCID': 
+       {'ORCID': 
             'http: //orcid.org/0000-0001-5966-6083', 
             'authenticated-orcid': True, 
             'given': 'Harrison J.', 
             'family': 'Cox', 
             'sequence': 'first', 
             'affiliation': [
-        {'name': 'Department of Chemistry, Durham University, Durham DH1 3LE, England, U.K.'
+            {'name': 'Department of Chemistry, Durham University, Durham DH1 3LE, England, U.K.'
         }
       ]
     },
-    {'given': 'Gary J.', 
+        {'given': 'Gary J.', 
             'family': 'Sharples', 
             'sequence': 
             'additional', 
             'affiliation': [
-        {'name': 'Department of Biosciences, Durham University, Durham DH1 3LE, England, U.K.'
+            {'name': 'Department of Biosciences, Durham University, Durham DH1 3LE, England, U.K.'
         }
       ]
     },
-    {'ORCID': 
+        {'ORCID': 
             'http: //orcid.org/0000-0002-5086-5737', 
             'authenticated-orcid': True, 
             'given': 'Jas Pal S.', 
             'family': 'Badyal', 
             'sequence': 'additional', 
             'affiliation': [
-        {'name': 'Department of Chemistry, Durham University, Durham DH1 3LE, England, U.K.'
+            {'name': 'Department of Chemistry, Durham University, Durham DH1 3LE, England, U.K.'
         }
       ]
     }
@@ -61,12 +61,12 @@ pip3 install crossref-commons
 
     python3 cross_ref.py prefix/suffix
 
-    Example 1:
+    > Example 1:
     python3 cross_ref.py 10.1021/acsanm.1c03151
     
     Returns dictionary above.
     
-    Example 2:
+    > Example 2:
     python3 cross_ref.py 10.25250/thescbr.brk569
     
     {
