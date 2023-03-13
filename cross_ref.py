@@ -59,9 +59,10 @@ def get_pub(doi):
 
     out = 'zcrossref.json'
     fh = open(out, 'w')
+    doi = clean(doi)
     try:
-        data = crossref_commons.retrieval.get_publication_as_json(doi.rstrip())
-        print('Found doi')
+        data = crossref_commons.retrieval.get_publication_as_json(doi)
+        print('Found doi ' + doi)
         print('Creating JSON file ' + out)
         bib_string = json.dumps(data)
         fh.write(bib_string)
@@ -71,6 +72,18 @@ def get_pub(doi):
     except ValueError:
         print('Did not find DOI ' + doi + ' in Crossref database')
         return None
+
+def clean(d):
+    
+    """
+    Remove http, https etc and trailing blanks
+    """
+    d = d.rstrip()
+    d = d.replace('http://doi.org/',"")
+    d = d.replace('http://dx.doi.org/',"")
+    d = d.replace('https://doi.org/',"")
+    d = d.replace('https://dx.doi.org/',"")
+    return d
 
 def read(d):
 
