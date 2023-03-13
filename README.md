@@ -58,16 +58,16 @@ pip3 install crossref-commons
 
 ## Execute module as a script:
 
-    **python3 cross_ref.py prefix/suffix**
+**python3 cross_ref.py prefix/suffix**
 
-    > Example 1:
-    python3 cross_ref.py 10.1021/acsanm.1c03151
+> Example 1:
+  python3 cross_ref.py 10.1021/acsanm.1c03151
     
-    Returns dictionary above.
+  Returns dictionary above.
     
-    > Example 2:
-    python3 cross_ref.py 10.25250/thescbr.brk569
-    
+> Example 2:
+  python3 cross_ref.py 10.25250/thescbr.brk569
+  
     {
         'author': [
             {'given': 'Stefan', 'family': 'Szyniszewski', 'sequence': 'first', 'affiliation': []}, 
