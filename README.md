@@ -82,7 +82,7 @@ pip3 install crossref-commons
     }
 ## Example 3:
 
-    python3 cross_ref.py  https://doi.org/10.1016/j.mtcomm.2023.105616
+    python3 cross_ref.py https://doi.org/10.1016/j.mtcomm.2023.105616
     
     {
         'author': [
