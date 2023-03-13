@@ -61,7 +61,7 @@ pip3 install crossref-commons
 **python3 cross_ref.py doi**
 
 ## Example 1:
-   python3 cross_ref.py 10.1021/acsanm.1c03151
+   python3 cross_ref.py [10.1021/acsanm.1c03151](http://doi.org/10.1021/acsanm.1c03151)
     
    Returns dictionary above.
     
@@ -82,7 +82,7 @@ pip3 install crossref-commons
     }
 ## Example 3:
 
-    python3 cross_ref.py https://doi.org/10.1016/j.mtcomm.2023.105616
+    python3 cross_ref.py [https://doi.org/10.1016/j.mtcomm.2023.105616](https://doi.org/10.1016/j.mtcomm.2023.105616)
     
     {
         'author': [
