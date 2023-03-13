@@ -43,11 +43,11 @@ pip3 install crossref-commons
         }
       ]
     }
-  ], 
+    ], 
     'title': ['Tea–Essential Oil–Metal Hybrid Nanocoatings for Bacterial and Viral Inactivation'
-  ], 
+    ], 
     'journal': ['ACS Applied Nano Materials'
-  ], 
+    ], 
     'issue': '11', 
     'volume': '4', 
     'pages': '12619-12628', 
