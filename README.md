@@ -80,4 +80,22 @@ pip3 install crossref-commons
         'pages': '', 
         'pub_year': 2021
     }
+## Example 3:
+
+    python3 cross_ref.py  https://doi.org/10.1016/j.mtcomm.2023.105616
+    
+    {
+        'author': [
+            {'given': 'O.', 'family': 'Duncan', 'sequence': 'first', 'affiliation': []}, 
+            {'given': 'M.', 'family': 'Chester', 'sequence': 'additional', 'affiliation': []}, 
+            {'given': 'W.', 'family': 'Wang', 'sequence': 'additional', 'affiliation': []}, 
+            {'given': 'A.', 'family': 'Alderson', 'sequence': 'additional', 'affiliation': []}, 
+            {'given': 'T.', 'family': 'Allen', 'sequence': 'additional', 'affiliation': []}], 
+        'title': ['Effect of twist on indentation resistance'], 
+        'journal': ['Materials Today Communications'], 
+        'issue': '', 
+        'volume': '35', 
+        'pages': '105616', 
+        'pub_year': 2023
+    }
 
