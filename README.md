@@ -9,7 +9,7 @@ pip3 install crossref-commons
     >>> cross_ref.get_pub(doi)
 
     Returns a Python dictionary with structure:
-{
+ {
     'author': [
     {'ORCID': 
             'http: //orcid.org/0000-0001-5966-6083', 
@@ -51,7 +51,7 @@ pip3 install crossref-commons
     'volume': '4', 
     'pages': '12619-12628', 
     'pub_year': 2021
-}
+ }
 
 
 
