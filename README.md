@@ -42,7 +42,7 @@ pip3 install crossref-commons
                 {'name': 'Department of Chemistry, Durham University, Durham DH1 3LE, England, U.K.'
                 }
             ]
-    }
+        }
     ], 
     'title': ['Tea–Essential Oil–Metal Hybrid Nanocoatings for Bacterial and Viral Inactivation'
     ], 
