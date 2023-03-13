@@ -10,33 +10,49 @@ pip3 install crossref-commons
 
     Returns a Python dictionary with structure:
     {
-        'author': 
-            [{'ORCID': 
-                'http://orcid.org/0000-0001-5966-6083', 
-                'authenticated-orcid': True, 
-                'given': 'Harrison J.', 
-                'family': 'Cox', 
-                'sequence': 'first', 
-                'affiliation': [{'name': 'Department of Chemistry, Durham University, Durham DH1 3LE, England, U.K.'}]}, 
-            {'given': 'Gary J.', 
-                'family': 'Sharples', 
-                'sequence': 
-                'additional', 
-                'affiliation': [{'name': 'Department of Biosciences, Durham University, Durham DH1 3LE, England, U.K.'}]}, 
-            {'ORCID': 
-                'http://orcid.org/0000-0002-5086-5737', 
-                'authenticated-orcid': True, 
-                'given': 'Jas Pal S.', 
-                'family': 'Badyal', 
-                'sequence': 'additional', 
-                'affiliation': [{'name': 'Department of Chemistry, Durham University, Durham DH1 3LE, England, U.K.'}]}], 
-        'title': ['Tea–Essential Oil–Metal Hybrid Nanocoatings for Bacterial and Viral Inactivation'], 
-        'journal': ['ACS Applied Nano Materials'], 
-        'issue': '11', 
-        'volume': '4', 
-        'pages': '12619-12628', 
-        'pub_year': 2021
+    'author': [
+    {'ORCID': 
+            'http: //orcid.org/0000-0001-5966-6083', 
+            'authenticated-orcid': True, 
+            'given': 'Harrison J.', 
+            'family': 'Cox', 
+            'sequence': 'first', 
+            'affiliation': [
+        {'name': 'Department of Chemistry, Durham University, Durham DH1 3LE, England, U.K.'
+        }
+      ]
+    },
+    {'given': 'Gary J.', 
+            'family': 'Sharples', 
+            'sequence': 
+            'additional', 
+            'affiliation': [
+        {'name': 'Department of Biosciences, Durham University, Durham DH1 3LE, England, U.K.'
+        }
+      ]
+    },
+    {'ORCID': 
+            'http: //orcid.org/0000-0002-5086-5737', 
+            'authenticated-orcid': True, 
+            'given': 'Jas Pal S.', 
+            'family': 'Badyal', 
+            'sequence': 'additional', 
+            'affiliation': [
+        {'name': 'Department of Chemistry, Durham University, Durham DH1 3LE, England, U.K.'
+        }
+      ]
     }
+  ], 
+    'title': ['Tea–Essential Oil–Metal Hybrid Nanocoatings for Bacterial and Viral Inactivation'
+  ], 
+    'journal': ['ACS Applied Nano Materials'
+  ], 
+    'issue': '11', 
+    'volume': '4', 
+    'pages': '12619-12628', 
+    'pub_year': 2021
+}
+    
 
 Execute module as a script:
 
