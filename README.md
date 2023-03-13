@@ -1,4 +1,4 @@
-# Get bibliographic information for one DOI
+# Get bibliographic information for one DOI (in any format)
 
 ## Requirements 
 pip3 install crossref-commons
@@ -58,7 +58,7 @@ pip3 install crossref-commons
 
 ## Execute module as a script:
 
-**python3 cross_ref.py prefix/suffix**
+**python3 cross_ref.py doi**
 
 ## Example 1:
    python3 cross_ref.py 10.1021/acsanm.1c03151
@@ -67,7 +67,7 @@ pip3 install crossref-commons
     
 ## Example 2:
 
-   python3 cross_ref.py 10.25250/thescbr.brk569
+   python3 cross_ref.py http://doi.org/10.25250/thescbr.brk569
   
     {
         'author': [
