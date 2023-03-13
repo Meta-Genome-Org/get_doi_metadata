@@ -19,19 +19,19 @@ pip3 install crossref-commons
             'family': 'Cox', 
             'sequence': 'first', 
             'affiliation': [
-            {'name': 'Department of Chemistry, Durham University, Durham DH1 3LE, England, U.K.'
-        }
-      ]
-    },
+                {'name': 'Department of Chemistry, Durham University, Durham DH1 3LE, England, U.K.'
+                }
+             ]
+        },
         {'given': 'Gary J.', 
             'family': 'Sharples', 
             'sequence': 
             'additional', 
             'affiliation': [
-            {'name': 'Department of Biosciences, Durham University, Durham DH1 3LE, England, U.K.'
-        }
-      ]
-    },
+                {'name': 'Department of Biosciences, Durham University, Durham DH1 3LE, England, U.K.'
+                }
+            ]
+        },
         {'ORCID': 
             'http: //orcid.org/0000-0002-5086-5737', 
             'authenticated-orcid': True, 
@@ -39,9 +39,9 @@ pip3 install crossref-commons
             'family': 'Badyal', 
             'sequence': 'additional', 
             'affiliation': [
-            {'name': 'Department of Chemistry, Durham University, Durham DH1 3LE, England, U.K.'
-        }
-      ]
+                {'name': 'Department of Chemistry, Durham University, Durham DH1 3LE, England, U.K.'
+                }
+            ]
     }
     ], 
     'title': ['Tea–Essential Oil–Metal Hybrid Nanocoatings for Bacterial and Viral Inactivation'
@@ -54,12 +54,11 @@ pip3 install crossref-commons
     'pub_year': 2021
     }
     
-    
 
 
 ## Execute module as a script:
 
-    python3 cross_ref.py prefix/suffix
+    ** python3 cross_ref.py prefix/suffix **
 
     > Example 1:
     python3 cross_ref.py 10.1021/acsanm.1c03151
