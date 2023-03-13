@@ -64,10 +64,20 @@ pip3 install crossref-commons
     Example 1:
     python3 cross_ref.py 10.1021/acsanm.1c03151
     
+    Returns dictionary above.
+    
     Example 2:
     python3 cross_ref.py 10.25250/thescbr.brk569
-"""
-
-
-
+    
+    {
+        'author': [
+            {'given': 'Stefan', 'family': 'Szyniszewski', 'sequence': 'first', 'affiliation': []}, 
+            {'given': 'Miranda', 'family': 'Anderson', 'sequence': 'additional' , 'affiliation': []}], 
+        'title': ['Non-cuttable material inspired by seashells'], 
+        'journal': ['TheScienceBreaker'], 
+        'issue': '03', 
+        'volume': '07', 
+        'pages': '', 
+        'pub_year': 2021
+    }
 
