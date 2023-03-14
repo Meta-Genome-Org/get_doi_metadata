@@ -1,4 +1,4 @@
-# Get bibliographic information for one DOI (in any format)
+# Get bibliographic information for one DOI
 
 ## Requirements 
 pip3 install crossref-commons
@@ -6,7 +6,7 @@ pip3 install crossref-commons
 
 ## Usage: 
     >>> import cross_ref
-    >>> cross_ref.get_pub(doi)
+    >>> cross_ref.get_pub(doi)  #doi can be in any format with or without http://doi.org
 
     Returns a Python dictionary with structure:
     
